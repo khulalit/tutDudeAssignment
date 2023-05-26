@@ -56,7 +56,7 @@
 .card{
   background: linear-gradient(270deg, #800080 0%, #FF864C 100%);
   border-radius: 20px;
-  min-width: 358px;
+  max-width: 358px;
   height: 228px;
 }
 .card-header{
