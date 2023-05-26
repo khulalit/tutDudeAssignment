@@ -1,4 +1,4 @@
-
+'use client'
 import Header from '@/components/header'
 import Image from 'next/image'
 import { Poppins } from 'next/font/google'
@@ -15,12 +15,13 @@ const popins = Poppins({
   weight: ['400','500','600','700']
 })
 
-export const metadata = {
-  title: "Home | TutDude",
-  description: ''
-};
 
 export default function Home() {
+  useEffect(()=>{
+    if(localStorage.getItem('alreadyOpened') == undefined)
+      alert('Click on the friends who enrolled link bellow to go next page ')
+    localStorage.setItem('alreadyOpened',true)
+  })
   return (
     <main className={`${popins.className} mb-[80px]`} >
       <Header navlink={NAVLINKS}/>
