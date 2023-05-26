@@ -57,7 +57,7 @@
   background: linear-gradient(270deg, #800080 0%, #FF864C 100%);
   border-radius: 20px;
   max-width: 358px;
-  height: 228px;
+  min-height: 228px;
 }
 .card-header{
   font-style: normal;
