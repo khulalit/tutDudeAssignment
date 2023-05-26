@@ -6,6 +6,21 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  --main-color-light: rgba(128, 0, 128, 0.25);
+  --main-color:  #800080;
+  --liner-gradient: linear-gradient(270deg, #800080 0%, #FF864C 100%);
+  --gray: #4d4d4d;
+  --black: rgb(0,0,0);
+  --shadow: 0px 3px 100px rgba(0, 0, 0, 0.1);
+}
+*{
+  box-sizing: border-box;
+}
+.gradient-2-bg{
+  background: linear-gradient(270deg, #800080 0%, #FF864C 100%);;
+}
+.shadow{
+  box-shadow: 0px 3px 100px rgba(0, 0, 0, 0.1);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -15,13 +30,57 @@
     --background-end-rgb: 0, 0, 0;
   }
 }
+.no-scrollbar::-webkit-scrollbar{
+  width: 0px;
+}
+.pill {
+  padding: 4px 9px;
+  gap: 10px;
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  width: fit-content;
+  height: 29px;
+  left: 96px;
+  top: 85px;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+
+  border: 1.5px solid #EEAEAE;
+  border-radius: 20px;
+}
+::-webkit-scrollbar {
+  width: 0;
+}
+.card{
+  background: linear-gradient(270deg, #800080 0%, #FF864C 100%);
+  border-radius: 20px;
+  min-width: 358px;
+  height: 228px;
+}
+.card-header{
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+}
+.center-absoulte{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  
+}
+@media (max-width: 600px) {
+  .seeOnlyMobile {
+    display: block;
+  }
+  .mobile-view{
+    display: flex;
+    flex-direction: column;
+    height:fit-content;
+    overflow: hidden;
+    /* align-items: center; */
+    padding: 30px;
+  }
 }
