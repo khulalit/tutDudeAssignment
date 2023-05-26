@@ -29,7 +29,7 @@ export default function page() {
       <div className='px-[30px] lg:px-[187px]'>
         <h3 className='text-[20px] text-[--main-color] font-[600]'>Friends who enrolled <span className='text-[--gray]'>(3)</span></h3>
       </div>
-      <section className='scrollbar px-[30px] lg:mx-[187px] lg:h-[250px] overflow-x-scroll mt-[30px] gap-[10px] flex mobile-view'>
+      <section className='scrollbar px-[30px] lg:mx-[187px] lg:h-[250px] overflow-x-scroll mt-[30px] gap-[10px] flex items-center mobile-view'>
         <Card name="Dhiraj Saxsena" date="14 Sep, 2022" amount="185"/>
         <Card name="Subhash Mishra" date="15 Sep, 2022" amount="485"/>
         <Card name="Prafull Kumar" date="16 Sep, 2022" amount="485"/>
