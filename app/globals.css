@@ -56,8 +56,6 @@
 .card{
   background: linear-gradient(270deg, #800080 0%, #FF864C 100%);
   border-radius: 20px;
-  max-width: 358px;
-  min-height: 228px;
 }
 .card-header{
   font-style: normal;
@@ -75,6 +73,9 @@
   .seeOnlyMobile {
     display: block;
   }
+  /* .card{
+    max-width: 358px;
+  } */
   .mobile-view{
     display: flex;
     flex-direction: column;
@@ -84,9 +85,12 @@
     padding: 30px;
   }
 }
-@media (min-width: 768px){
+/* @media (min-width: 768px){
   .onlyDesktop{ 
     marginInline : 287px;}
+  
+  .card{
+    min-width: 358px;
+  }
 
-
-}
+} */
